@@ -8,32 +8,36 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <form class="" action="index.html" method="post">
+    <form action="index.html" method="post" id="form">
       <h2> Add Your Info Please ! </h2>
       <div class="mainHolder">
 
         <div class="inputs">
           <div class="input">
-              <label for=""> Name: </label> <input type="text" name="" value="">
+              <label> Name: </label> <input type="text">
           </div>
 
           <div class="input">
-            <label for="">Email: </label> <input type="text" name="" value="">
+            <label> County: </label> <input type="text">
           </div>
 
           <div class="input">
-            <label for=""> Gender: </label> <input type="text" name="" value="">
+            <label> City: </label> <input type="text">
           </div>
 
           <div class="input">
-            <label for=""> Age: </label> <input type="text" name="" value="">
+            <label> role: </label> <input type="text">
+          </div>
+
+          <div class="input">
+            <label> Sales: </label> <input type="text">
           </div>
         </div>
           <img src="https://1.bp.blogspot.com/-asNfIVf9GAw/Wf2Pf83p7II/AAAAAAAANxc/mu9U1ndMQ9sK6IeBkBTgWrQ39Pa-uXH1QCEwYBhgL/s1600/animated_volcano.gif" alt="CSV.gif">
       </div>
       <div class="buttons">
-        <button type="button" name="button"> Downlaod </button>
-        <button type="button" name="button"> Reset </button>
+        <button type="button"  onclick="download()"> Downlaod </button>
+        <button type="button"  onclick="reset()"> Reset </button>
       </div>
     </form>
     <script type='text/javascript' src='app.js'></script>
