@@ -49,6 +49,8 @@ button {
   color: #33650d;
   border: 2px solid #33650d;
   border-radius: 10px;
+  font-weight: 400;
+  font-size: 20px;
 }
 
 input {

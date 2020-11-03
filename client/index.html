@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -14,32 +13,33 @@
 
         <div class="inputs">
           <div class="input">
-              <label> Name: </label> <input type="text">
+              <label> Name: </label> <input type="text" name="name" id="name">
           </div>
 
           <div class="input">
-            <label> County: </label> <input type="text">
+            <label> Country: </label> <input type="text" name="country" id="country">
           </div>
 
           <div class="input">
-            <label> City: </label> <input type="text">
+            <label> City: </label> <input type="text" name="city" id="city">
           </div>
 
           <div class="input">
-            <label> role: </label> <input type="text">
+            <label> Role: </label> <input type="text" name="role" id="role">
           </div>
 
           <div class="input">
-            <label> Sales: </label> <input type="text">
+            <label> Sales: </label> <input type="number" name="sales" id="sales">
           </div>
         </div>
           <img src="https://1.bp.blogspot.com/-asNfIVf9GAw/Wf2Pf83p7II/AAAAAAAANxc/mu9U1ndMQ9sK6IeBkBTgWrQ39Pa-uXH1QCEwYBhgL/s1600/animated_volcano.gif" alt="CSV.gif">
       </div>
       <div class="buttons">
-        <button type="button"  onclick="download()"> Downlaod </button>
+        <button type="button" onclick="downlaod()"> Downlaod </button>
         <button type="button"  onclick="reset()"> Reset </button>
       </div>
     </form>
     <script type='text/javascript' src='app.js'></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   </body>
 </html>
