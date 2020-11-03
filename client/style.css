@@ -1,0 +1,35 @@
+body {
+  font-family: sans-serif;
+  color: #4fc269;
+  }
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 80vh;
+  width: 60%;
+  border: solid black 5px;
+  padding: 10px;
+  position: absolute;
+  top: 20%;
+  margin: 0 20% 0 20%;
+  float: right;
+}
+
+.inputs {
+
+   /* float: left; */
+   width: 50%;
+}
+
+img {
+  float: right;
+  width: auto;
+}
+
+.mainHolder {
+display: flex;
+flex-direction: row;
+}
