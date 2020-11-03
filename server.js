@@ -15,3 +15,42 @@ app.get('/', (req, res) => {
 
 app.use(express.static(path.join(__dirname, 'client')));
 app.use(favicon(__dirname + '/client/favicon.ico'));
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+router.post('/', (req, res) => {
+  const csv = JSONToCSV(req.body, {
+    fields: ["Name", "Country", "City", "Role", "Sales"]
+  })
+  res.attachment('customers.csv').send(csv)
+});
+
+const controller = {};
+
+controller.download = async (req, res) => {
+ const fields = [
+   {
+     label: 'Name',
+     value: 'first_name'
+   },
+   {
+     label: 'Country',
+     value: 'county'
+   },
+   {
+    label: 'City',
+     value: 'city'
+   },
+   {
+    label: 'Role',
+     value: 'role'
+   },
+   {
+    label: 'Sales',
+     value: 'sales'
+   }
+ ];
+ const data = await users.findAll();
+
+ return download(res, 'users.csv', fields, data);
+}
